@@ -45,6 +45,6 @@ jobs:
         git push --set-upstream origin newBranch
 
     - name: create pull request
-      run: gh pr create -B newBranch -H main --title 'Merge newBranch into main' --body 'Created by Github action'
+      run: gh pr create --title "Pull request title" --body "Pull request body"
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
