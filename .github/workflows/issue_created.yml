@@ -40,7 +40,7 @@ jobs:
         git status
         git add hello.md
         git commit -m "Sample Hello World"
-        git push -u origin newBranch
+        git push
 
     - name: create pull request
       run: gh pr create -B newBranch -H main --title 'Merge newBranch into main' --body 'Created by Github action'
