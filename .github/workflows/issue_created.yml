@@ -38,7 +38,7 @@ jobs:
         git branch newBranch main
         echo "#Hello World" > hello.md
         git status
-        git add .
+        git add hello.md
         git commit -m "Sample Hello World"
         git push -u origin newBranch
 
