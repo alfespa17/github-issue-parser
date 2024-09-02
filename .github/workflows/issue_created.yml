@@ -33,9 +33,10 @@ jobs:
 
     - name: New Issue
       run: |
-        git config --global user.email "{{ github.event.issue.user.login }}@example.com"
-        git config --global user.name "{{ github.event.issue.user.login }}"
+        git config --global user.email "example@example.com"
+        git config --global user.name "example"
         git branch newBranch main
+        git checkout newBranch
         echo "#Hello World" > hello.md
         git status
         git add hello.md
