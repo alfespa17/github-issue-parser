@@ -33,6 +33,8 @@ jobs:
 
     - name: New Issue
       run: |
+        git config --global user.email "{{ github.event.issue.user.login }}@example.com"
+        git config --global user.name "{{ github.event.issue.user.login }}"
         git branch newBranch main
         echo "#Hello World" > hello.md
         git add .
