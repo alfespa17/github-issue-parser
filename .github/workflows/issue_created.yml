@@ -40,6 +40,7 @@ jobs:
         echo "#Hello World" > hello.md
         git status
         git add hello.md
+        git add output.json
         git commit -m "Sample Hello World"
         git push --set-upstream origin newBranch
 
